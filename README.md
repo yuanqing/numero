@@ -2,7 +2,7 @@
 
 > A stricter `parseInt` and `parseFloat`.
 
-## API
+## Usage
 
 ```js
 numero.parseInt(42);      // 42
@@ -26,7 +26,7 @@ numero.parseFloat(' 3.14'); // 3.14
 
 3. `x` can have trailing/leading whitespace.
 
-Numero is stricter than your native `parseInt` and `parseFloat` in that extraneous characters are not allowed. For example:
+Numero is stricter than the native `parseInt` and `parseFloat` in that extraneous characters are not allowed. For example:
 
 ```js
 parseInt('42foo', 10);    // 42
@@ -36,14 +36,16 @@ parseFloat('3.14foo');        // 3.14
 numero.parseFloat('3.14foo'); // null
 ```
 
-Numero can also handle octal and hexadecimal representations, and negative numbers too:
+Numero can also handle numbers in their octal and hexadecimal representations, and negative numbers too:
 
 ```js
-numero.parseInt('052');     //  42
+numero.parseInt('052');     // 42
 numero.parseFloat('-0x2a'); // -42
 ```
 
-[There are lots of tests.](https://github.com/yuanqing/numero/blob/master/test)
+[Check the tests.](https://github.com/yuanqing/numero/blob/master/test)
+
+## API
 
 ### numero.isInt(x)
 
