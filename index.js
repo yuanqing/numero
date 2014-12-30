@@ -52,6 +52,10 @@ var _parseFloat = (function() {
 
 })();
 
+var isFloat = function(x) {
+  return _parseFloat(x) !== null;
+};
+
 var _parseInt = function(x) {
 
   var parsed = _parseFloat(x);
@@ -63,18 +67,17 @@ var _parseInt = function(x) {
 
 };
 
+var isInt = function(x) {
+  return _parseInt(x) !== null;
+};
+
 module.exports = {
 
-  isInt: function(x) {
-    return _parseInt(x) !== null;
-  },
-
+  isFloat: isFloat,
+  parseFloat: _parseFloat,
+  isInt: isInt,
+  isInteger: isInt,
   parseInt: _parseInt,
-
-  isFloat: function(x) {
-    return _parseFloat(x) !== null;
-  },
-
-  parseFloat: _parseFloat
+  parseInteger: _parseInt
 
 };
