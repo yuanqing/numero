@@ -1,6 +1,6 @@
 {
   "name": "numero",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A stricter `parseInt` and `parseFloat`.",
   "author": "Lim Yuan Qing",
   "license": "MIT",
