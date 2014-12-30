@@ -49,11 +49,11 @@ numero.parseFloat('-0x2a'); // -42
 
 ### numero.isInt(x)
 
-Returns `true` if `x` can be parsed to an integer.
+Returns `true` if `x` can be parsed to an integer. Alias: `isInteger`
 
 ### numero.parseInt(x)
 
-Returns an integer, or `null` if `x` cannot be parsed to an integer.
+Returns an integer, or `null` if `x` cannot be parsed to an integer. Alias: `parseInteger`.
 
 ### numero.isFloat(x)
 
